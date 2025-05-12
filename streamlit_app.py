@@ -24,6 +24,10 @@ df.year = df.year.astype('int')
 genres_list = df.genre.unique()
 genres_selection = st.multiselect('Select genres', genres_list, ['Action', 'Adventure', 'Biography', 'Comedy', 'Drama', 'Horror'])
 
+
+st.title("Youtube video")
+st.video("https://www.youtube.com/watch?v=cHHLHGNpCSA")
+
 ## Year selection
 year_list = df.year.unique()
 year_selection = st.slider('Select year duration', 1986, 2006, (2000, 2016))
